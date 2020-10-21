@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.less';
 
-function App() {
+import { AvatarContent, Time } from './components'
+
+import { Layout, Row, Col } from 'antd'
+
+const { Content, Header } = Layout
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Layout>
+      <Header style={{ background: '#fff', boxShadow: '3px 3px 5px 6px #ccc', height: 35 }} />
+      <Content>
+        <Row >
+          <Col span={6} >
+            <AvatarContent />
+            <Time />
+          </Col>
+          <Col span={18} >
+          </Col>
+        </Row>
+      </Content>
+    </Layout>
+  )
 }
 
 export default App;
