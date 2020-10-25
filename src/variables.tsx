@@ -6,7 +6,9 @@ export const data = {
     email: 'niparrara@gmail.com',
     repository: 'https://github.com/NicolasPrr',
     linkedin: 'https://www.linkedin.com/in/nicol%C3%A1s-parra-ramos-366910140/',
-    src: 'https://media-exp1.licdn.com/dms/image/C5603AQEbgGX19uyK1A/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=98XwweCJkXtFDaQRLM666tX9zGbVGkaIhL85nMCNWQI'
+    src: 'https://media-exp1.licdn.com/dms/image/C5603AQEbgGX19uyK1A/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=98XwweCJkXtFDaQRLM666tX9zGbVGkaIhL85nMCNWQI',
+    about: 'Soy Desarrollador  con experiencia desde el 2017 en desarrollo de paginas\
+        web trabajando tanto en backend como en frontend.'
 }
 
 export interface TLanguage  {

@@ -19,6 +19,7 @@ const DynamicTag = (props: any) => {
                 const color = current === keyInt ? '#007991' : tagColor[keyInt % (tagColor.length - 1)]
                 return (
                     <Tooltip visible={current === keyInt}
+                        key={key}
                         title={ props.type === 'language' ?
                             data[keyInt].frameworks.join(' | ') : data[keyInt].level}   >
                         <Tag color={color} style={{ cursor: 'pointer' }}

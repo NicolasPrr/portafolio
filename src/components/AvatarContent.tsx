@@ -30,6 +30,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
     
 `;
 const Row = styled.div`
@@ -42,7 +43,6 @@ const Row = styled.div`
 const AvatarContent = () => (
     <Card>
         <Wrapper>
-
             <Avatar
                 src={data.src}
                 size={125}
