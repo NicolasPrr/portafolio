@@ -3,8 +3,6 @@ import React from 'react'
 import { Card, WrapperIns } from './index'
 import {Typography, Divider} from 'antd'
 
-import {data} from '../variables'
-
 type Props ={
     title: string,
     children: string | React.ReactNode,

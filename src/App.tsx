@@ -27,6 +27,7 @@ const App = () => {
             <Description title='Acerca de mi'>
                 {data.about}
             </Description>
+
             <Description title='Proyectos'>
               <ListProject/>
             </Description>

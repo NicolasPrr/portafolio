@@ -1,5 +1,5 @@
 export const data = {
-    name: "Nicolas Parra Ramos",
+    name: "Nicolás Parra Ramos",
     university: "Universidad Nacional de Colombia",
     cerificate: "Ingeniero de sistemas y computación",
     phone: '(+57) 3213326683',
@@ -23,6 +23,48 @@ export interface TIdiom  {
 export const idiomList: TIdiom[] = [
     {name: 'Inglés', level: 'B1' }
 ]
+export type ProjectItem ={
+    title: string,
+    description: string,
+    dates: string,
+    src: string[],
+    libraries?: string[],
+    url?: string,
+    repo?: string,
+}
+export const projectData : ProjectItem[]  = [
+    {
+        title: 'Proyecto de vigilancia cientifica',
+        description: 'Descripcion del proyectoDescripcion del proyecto',
+        dates: 'Febrero 2020 - Octubre 2020 ',
+        src: [
+
+            'https://drive.google.com/uc?id=1z0rBa3jwDYQ9JuIvzkaN2Ft3FZGRzldb',
+            'https://drive.google.com/uc?id=1AT2jfAoZ59fsm9gsxzPAtcRTLRxS4eS_',
+            'https://drive.google.com/uc?id=10TaKl426VaX132tJyAw3AXzWid0H0e5D',
+            'https://drive.google.com/uc?id=1LP5b478TljnHOXLscKWOIg9lq0_Y-r5r',
+            'https://drive.google.com/uc?id=1Oh0gJWpVIrGwEj_J6jrrY9fbjaHtLoAa',
+        ],
+        url: 'https://horus.unal.edu.co',
+        libraries: ['React', 'Ant design', 'FlexBox', 'BizCharts'] 
+
+    },
+    {
+        title: 'Proyecto Telemedicina UN',
+        description: 'Descripcion del proyectoDescripcion del proyecto,  del proyectoDescripcion del proyecto,  del proyectoDescripcion del proyecto,  del proyectoDescripcion del proyecto',
+        dates: 'Febrero 2020 - Octubre 2020 ',
+        src: [
+
+            'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+            'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+            'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+            'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+            'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+        ],
+
+    },
+]
+
 export const languageList: TLanguage[] = [
     {
         name: 'Ruby',
