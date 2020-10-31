@@ -86,6 +86,27 @@ export const projectData: ProjectItem[] = [
         libraries: ['React', 'bulma', 'FlexBox', 'PostgreSQL', 'Ruby On Rails']
 
     },
+    {
+        title: 'SIA Dashboard',
+        description: `
+        El objetivo de la aplicación es poder calcular de manera dinámica los promedios usados en la universidad tales como el PAPA, PA y PAPPI, la página 
+        tiene la capacidad de hacer el resumen de la historia académica de cada estudiante de la universidad siempre y cuando el estudiante de los datos,
+        la pagina guarda la información en el navegador para asegurar la persistencia de los datos.
+        `,
+        dates: 'Marzo 2019 - Febrero 2020',
+        src: [
+            'https://drive.google.com/uc?id=11F97F0AzPun8R2pkH2xrjlnAkT_oCVyz',
+            'https://drive.google.com/uc?id=1knKUr2QoLPGLHL5xo2e_5mC7DLqGrbum',
+            'https://drive.google.com/uc?id=1IKdRhKZYtbfPZXG4CTuyqb-n5lamDuka',
+            'https://drive.google.com/uc?id=1Q4uxxHht4f-KG5lZakuG7h6OdOAnRT4m',
+        ],
+        youtube: 'https://www.youtube.com/watch?v=wTrKv_X4d0A',
+        url: 'https://nicolasprr.github.io/DashBoardSIA/',
+        repo: 'https://github.com/NicolasPrr/DashBoardSIA',
+        libraries: ['React', 'Ant design', 'Redux', 'BizCharts']
+
+
+    },
 ]
 
 export type iconTypes = 'university' | 'job' | 'finish' | 'airplane' | 'prize' | 'certificate'
@@ -147,21 +168,26 @@ export const languageList: TLanguage[] = [
     {
         name: 'Javascript',
         frameworks: ['React.js', 'React Native', 'Express'],
-        experience: '6 meses',
+        experience: '2 anos',
     },
     {
         name: 'Typescript',
-        frameworks: ['Nest.js', 'Angular'],
+        frameworks: ['Nest.js', 'React'],
         experience: '6 meses',
     },
     {
         name: 'Databases',
         frameworks: ['MySQL', 'MongoDB'],
-        experience: '6 meses',
+        experience: '2 años',
     },
     {
         name: 'Python',
         frameworks: ['Tensorflow', 'Keras'],
-        experience: '6 meses',
+        experience: '2 años',
+    },
+    {
+        name: 'VBA',
+        frameworks: ['Macros excel'],
+        experience: '1 año ',
     },
 ]
