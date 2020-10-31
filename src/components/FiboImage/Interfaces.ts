@@ -1,5 +1,6 @@
 export interface IpropsContainer {
     boxes: number,
+    full?: boolean
 }
 
 export interface IpropsItem {

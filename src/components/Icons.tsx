@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { createFromIconfontCN, GithubOutlined } from "@ant-design/icons";
+import React from 'react'
+import { createFromIconfontCN, GithubOutlined, YoutubeOutlined } from "@ant-design/icons";
 import { Tooltip } from 'antd'
 import styled from 'styled-components'
 
@@ -44,34 +44,50 @@ export const Idiom = () => (
         style={{ fontSize: 15 }}
     />
 )
-export const Url = ({ title, href }: { title: string, href?: string }) => {
-    // const [hover, setHover] = useState(false)
-    const StyledIcon = styled(IconFont)`
+const StyledIconURL = styled(IconFont)`
         font-size: 15;
         &:hover {
             color: #007991;
         }
     `;
+export const Url = ({ title, href }: { title: string, href?: string }) => {
+    // const [hover, setHover] = useState(false)
     return (
         <Tooltip title={title}>
-            <a href={href || ''} target='_blank'>
-                <StyledIcon type='iconURL'  />
+            <a href={href || ''} rel="noopener noreferrer" target='_blank'>
+                <StyledIconURL type='iconURL' />
             </a>
         </Tooltip>
     )
 }
-export const Repo = ({ title, href }: { title: string, href?: string }) => {
-    // const [hover, setHover] = useState(false)
-    const StyledIcon = styled(IconFont)`
+const StyledIconGit = styled(GithubOutlined)`
         font-size: 15;
         &:hover {
             color: #007991;
         }
     `;
+export const Repo = ({ title, href }: { title: string, href?: string }) => {
+    // const [hover, setHover] = useState(false)
     return (
         <Tooltip title={title}>
-            <a href={href || ''} target='_blank'>
-                <GithubOutlined />
+            <a href={href || ''} rel="noopener noreferrer" target='_blank'>
+                <StyledIconGit />
+            </a>
+        </Tooltip>
+    )
+}
+const StyledIconY = styled(YoutubeOutlined)`
+        font-size: 15;
+        &:hover {
+            color: #007991;
+        }
+    `;
+export const Youtube = ({ title, href }: { title: string, href?: string }) => {
+    // const [hover, setHover] = useState(false)
+    return (
+        <Tooltip title={title}>
+            <a href={href || ''} target='_blank' rel="noopener noreferrer">
+                <StyledIconY />
             </a>
         </Tooltip>
     )
